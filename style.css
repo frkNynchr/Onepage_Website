@@ -19,41 +19,23 @@ html {
     scroll-behavior: smooth;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 15px;
+textarea {
+    width: 100%;
+    resize: none;
+    overflow-y: auto;
+    max-height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
 }
-
-/* Track */
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
-    background-color: rgb(198, 156, 108);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: indigo;
-    border-radius: 10px;
-
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(54, 1, 92);
-}
-
 
 /*-------------------------- ayraç --------------------------*/
-.ara {
-    width: 100%;
-    height: 75px;
-    background-image: url(img/ara.png);
 
-}
 
 .display {
+    font-family: Century Gothic;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: bold;
     text-align: center;
 
 }
@@ -127,8 +109,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background: rgb(247, 208, 162);
-    box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
 
 }
 
@@ -163,8 +145,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(215, 184, 247);
-    box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 .sertifikalar {
@@ -203,41 +185,36 @@ header {
 .article-3 {
     width: 100%;
     height: 600px;
-    background-color: rgb(247, 208, 162);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 .project {
     width: 1200px;
-    height: 300px;
     display: grid;
-    grid-template: 2fr 2fr/ 3fr 3fr;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 sütun */
+    gap: 50px 100px;
+    /* satır ve sütun aralıkları */
     padding: 25px;
-    row-gap: 50px;
-    column-gap: 250px;
 
 }
 
-.proj1,
-.proj2,
-.proj3,
-.proj4 {
+.proj {
+    background-color: rgba(0, 0, 0, 0.24);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     column-gap: 20px;
+    border-radius: 50px;
 }
 
-.proj1:hover,
-.proj2:hover,
-.proj3:hover,
-.proj4:hover {
-    background-color: rgb(184, 154, 120);
+.proj:hover {
+    background-color: rgba(255, 255, 255, 0.329)
 }
 
 
@@ -254,10 +231,7 @@ header {
     color: black;
 }
 
-.proj1 img,
-.proj2 img,
-.proj3 img,
-.proj4 img {
+.proj img {
     width: 100px;
     height: 100px;
 }
@@ -265,7 +239,7 @@ header {
 /*-------------------------- ayraç --------------------------*/
 .article-4 {
     height: 700px;
-    background-color: rgb(215, 184, 247);
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
     display: flex;
     flex-direction: column;
@@ -284,7 +258,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 20px;
+    gap: 5px;
 }
 
 .contleftitle h2 {
@@ -343,7 +317,7 @@ header {
 
 .contleft button:hover,
 .contleft button:focus {
-    box-shadow: inset 120px 0 0 0 rgb(170, 141, 107);
+    /* box-shadow: inset 120px 0 0 0 rgb(170, 141, 107);*/
     color: white;
 }
 
@@ -409,6 +383,6 @@ footer {
 
 .socials ul li a img {
     width: 50px;
-    background-color: rgb(170, 141, 107);
+    background-color: rgba(250, 235, 215);
     border-radius: 5px;
 }
